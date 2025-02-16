@@ -23,7 +23,7 @@ let heros = ["Mr. Bruce Wayne", "Mr. Tony Stark", true, 1];
 // console.log(heros[0]);
 
 // ********* Conversion ********
-// generally impicit type conversion
+// generally impicit type conversion // means it automatically handle the issue
 let isValue = true;
 console.log(Number(isValue) + 1); // => 2
 
