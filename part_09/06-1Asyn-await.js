@@ -18,12 +18,12 @@ async function getBlogData() {
         console.log("fetching blog data");
         // const blogData = await fetchPostData();
         // const commentData = await fetchCommentData();
-        const [postData, commentData] = await Promise.all([
+        const [postData, commentData] = await Promise.all([  // this is good way accessing multiple response
             fetchPostData(), 
-            fetchCommentData()
+            fetchCommentData(),
         ]);
 
-        console.log(blogData);
+        console.log(postData);
         console.log(commentData);
         
         console.log("fetch Complete");

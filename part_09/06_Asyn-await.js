@@ -1,7 +1,7 @@
 function fetchUserData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve({name: "anubhav", url:"https://ap.in"})
+            reject({name: "anubhav", url:"https://www.google.com"})
         }, 3000);
     }) 
 }
@@ -9,9 +9,8 @@ function fetchUserData() {
 async function getUserData() {
     try {
         console.log(`Fetching user Data...`);
-        const userData = await fetchUserData();
+        const userData = await fetchUserData(); // takes time we can use this await keyword when there is async over it
         console.log("User data Fetched Successfully");
-
         console.log("User data: ", userData);
     } catch (error) {
         console.log("Error Fetching data", error);

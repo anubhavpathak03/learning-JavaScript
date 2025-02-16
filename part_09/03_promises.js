@@ -1,3 +1,6 @@
+
+// Data or Promise creation
+// promise taking call back function
 function fetchData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -11,6 +14,10 @@ function fetchData() {
     }) 
 }
 
+// Here we learn how to consume the promise 
+// **** fetchData().then().catch()
+    // here any variable, anything send by resolve send to 'then'
+    // here any variable, anything send by reject send to 'catch'
 fetchData()
     .then((data) => {
         console.log(data);

@@ -10,4 +10,5 @@ import {add, subtract} from "./08_math_operationM.js"
 console.log(multiply(16, 5));
 
 console.log(add(16, 5));
+console.log(subtract(16, 5));
 
