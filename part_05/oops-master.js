@@ -84,6 +84,7 @@ let account = new bankAccount();
 // console.log(account.getBalance());
 
 /** Abstraction  */
+// hide the complex details
 class coffeeMachine {
     start() {
         // call DB
@@ -140,7 +141,7 @@ class Calculator {
 let miniCalc = new Calculator();
 // console.log(miniCalc.add_without_static(6, 7));
 // console.log(miniCalc.add(6, 7)); gives error 
-// console.log(Calculator.add(19,1000));
+// console.log(Calculator.add(19,1000));  // we see static are special keyword which only called by class itself in which it is defined
 
 
 /** Getter and Setters */
