@@ -64,9 +64,13 @@ document.getElementById("teaList").addEventListener("click", function (event) {
 // Example 8
 document.getElementById("feedbackForm").addEventListener('submit', function(event) {
     event.preventDefault();
-    let feedBack = document.getElementById("feedbackInput").value;
+    let feedBack = document.getElementById("feedbackInput").value.trim(); // remove space
     // console.log(feedBack);
     const line = document.getElementById("feedbackDisplay")
+    if(feedBack === "") {
+        alert("you don't type any feedback");
+        return;
+    }
     line.textContent = `FeedBack is: ${feedBack}`;
     line.classList.add("highlight");
 })
@@ -74,7 +78,9 @@ document.getElementById("feedbackForm").addEventListener('submit', function(even
 // example 9
 document.addEventListener('DOMContentLoaded', function () {
     alert("DOM Content Loaded");
-    document.getElementById("domStatus").textContent = "DOM Fully Loaded";
+    let line = document.getElementById("domStatus")
+    line.textContent = "DOM Fully Loaded";
+    line.classList.add("highlight");
 })
 
 // example 10;
