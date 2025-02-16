@@ -10,12 +10,12 @@ const calc = (n) => {
     return sum;
 }
 
-const memoize = (fun) => {
+const memoize = (fun) => { // taking call back fucntion
     let cache = {};
-    return function(...args) {
+    return function(...args) { // concept of clousure
         let n = args[0];
         if(n in cache) {
-            console.log("cache");
+            console.log("value present in cache already");
             console.log(cache);
 
             return cache[n];
@@ -33,6 +33,8 @@ const efficient = memoize(calc);
 console.time();
 console.log(efficient(5));
 console.timeEnd();
+
+console.log("************* calling second time ************")
 
 console.time();
 console.log(efficient(5));
