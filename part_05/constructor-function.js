@@ -10,6 +10,7 @@ function Car(make, model) {
 let myCar = new Car("Toyoto", "Carry");
 // console.log(myCar);
 
+//**************************** Here 'this' refers to a newly created object ************************************
 
 function Tea(type) {
     this.type = type;
