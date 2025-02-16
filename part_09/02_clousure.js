@@ -1,3 +1,6 @@
+// clousure are function 
+// so this a type of function which remember the environment it is created
+
 function outer() {
     let number = 4;
     return function () {
